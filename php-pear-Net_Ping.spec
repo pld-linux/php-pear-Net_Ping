@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - Execute ping
 Summary(pl):	%{_pearname} - Wywo³ywanie pinga
 Name:		php-pear-%{_pearname}
-Version:	1.0.1
-Release:	4
+Version:	2.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	bf98acf8278be7583d397e42b2fab7ab
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	33af80393b7486710e7d043b2250608a
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
