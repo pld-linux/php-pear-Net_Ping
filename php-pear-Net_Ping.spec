@@ -8,7 +8,7 @@ Summary:	%{_pearname} - execute ping
 Summary(pl):	%{_pearname} - wywo³ywanie pinga
 Name:		php-pear-%{_pearname}
 Version:	2.4
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
