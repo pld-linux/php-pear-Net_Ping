@@ -2,8 +2,8 @@
 %define         _class          Net
 %define         _subclass       Ping
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - Execute ping
-Summary(pl):	%{_class}_%{_subclass} - Wywo³ywanie pinga
+Summary:	%{_pearname} - Execute ping
+Summary(pl):	%{_pearname} - Wywo³ywanie pinga
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
 Release:	3
