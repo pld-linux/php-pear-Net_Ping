@@ -11,7 +11,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	33af80393b7486710e7d043b2250608a
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/Net_Ping/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
