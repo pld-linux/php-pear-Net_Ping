@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       Ping
+%define		_class		Net
+%define		_subclass	Ping
 %define		_pearname	%{_class}_%{_subclass}
 %define		_status		stable
 
-Summary:	%{_pearname} - Execute ping
-Summary(pl):	%{_pearname} - Wywo³ywanie pinga
+Summary:	%{_pearname} - execute ping
+Summary(pl):	%{_pearname} - wywo³ywanie pinga
 Name:		php-pear-%{_pearname}
 Version:	2.4
 Release:	1
