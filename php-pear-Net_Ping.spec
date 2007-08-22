@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - execute ping
 Summary(pl.UTF-8):	%{_pearname} - wywoływanie pinga
 Name:		php-pear-%{_pearname}
-Version:	2.4.1
+Version:	2.4.2
 Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	021e62d12675689445c8bac9cdcc1318
+# Source0-md5:	5bfd8d695c35d30d353b51134ad8ca35
 URL:		http://pear.php.net/package/Net_Ping/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
