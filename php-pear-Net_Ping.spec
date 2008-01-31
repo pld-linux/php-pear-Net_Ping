@@ -3,22 +3,22 @@
 %define		_subclass	Ping
 %define		_pearname	%{_class}_%{_subclass}
 %define		_status		stable
-
 Summary:	%{_pearname} - execute ping
 Summary(pl.UTF-8):	%{_pearname} - wywoływanie pinga
 Name:		php-pear-%{_pearname}
-Version:	2.4.2
+Version:	2.4.3
 Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	5bfd8d695c35d30d353b51134ad8ca35
+# Source0-md5:	340ca27cfa1c0aab31991928d423cffb
 URL:		http://pear.php.net/package/Net_Ping/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
+Obsoletes:	php-pear-Net_Ping-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,20 +31,6 @@ In PEAR status of this package is: %{_status}.
 Ten pakiet zawiera PHP-owy wrapper na komendę ping.
 
 Ta klasa ma w PEAR status: %{_status}.
-
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
-AutoProv:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
@@ -63,7 +49,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
